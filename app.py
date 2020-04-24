@@ -6,10 +6,7 @@ from sqlalchemy import create_engine, func
 import datetime as dt 
 import numpy as np
 import pandas as pd
-import os
 
-from boto.s3.connection import S3Connection
-s3 = S3Connection(os.environ['API_KEY'], os.environ['op_test_heroku_env'])
 
 
 app = Flask(__name__)
